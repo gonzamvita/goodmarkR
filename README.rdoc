@@ -1,27 +1,12 @@
-== README
+== goodmarkR
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the final project for Ironhack Web Development Bootcamp.
 
-Things you may want to cover:
+goodmarkR lets the user to store bookmarks of speceific elements of a website.
 
-* Ruby version
+* Ruby 2.2.1 + Rails 4.2.5
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* sqlite3 for development environment.
 
 
 Please feel free to use a different markup language if you do not plan to run
