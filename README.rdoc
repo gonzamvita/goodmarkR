@@ -6,4 +6,10 @@ goodmarkR lets the user to store bookmarks of speceific elements of a website.
 
 * Ruby 2.2.1 + Rails 4.2.5
 
-* sqlite3 for development environment.
+* Using sqlite3 for development environment.
+
+* Using materializecss.com for CSS.
+
+* Using devise for client authentication and authorization
+
+* Made devise 'User' views adopt materialize styles.
