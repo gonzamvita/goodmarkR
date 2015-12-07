@@ -14,3 +14,11 @@
  *= require_self
  *= require materialize
  */
+
+.brand-logo {
+  margin-left: 20px;
+}
+
+.btn waves-effect waves-light{
+  background-color: #1a237e;
+}
