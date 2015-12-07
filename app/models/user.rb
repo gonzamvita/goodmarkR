@@ -8,4 +8,6 @@ class User < ActiveRecord::Base
   validates :last_name, presence: true
   validates_length_of :first_name, :maximum => 25
   validates_length_of :last_name, :maximum => 35
+
+  has_many  :bookmarks
 end
