@@ -4,6 +4,8 @@ This is the final project for Ironhack Web Development Bootcamp.
 
 goodmarkR lets the user to store bookmarks of speceific elements of a website.
 
+* The application uses a chrome extension, find it here: https://github.com/gonzamvita/goodmarkR-extension
+
 * Ruby 2.2.1 + Rails 4.2.5
 
 * Using sqlite3 for development environment.
