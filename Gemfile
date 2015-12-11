@@ -15,6 +15,8 @@ gem 'rspec-rails', '~> 3.0'
 
 # Using devise for login
 gem 'devise'
+# Use has_secure_token for user model authetication
+gem 'has_secure_token'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -31,6 +33,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'pry-rails'
 end
 
 group :development do

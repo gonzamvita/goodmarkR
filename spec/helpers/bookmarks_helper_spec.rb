@@ -11,5 +11,18 @@ require 'rails_helper'
 #   end
 # end
 RSpec.describe BookmarksHelper, type: :helper do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe 'url_with_protocol' do
+    it 'returns a string' do
+      expect(helper.url_with_protocol("test1")).to be_a(String)
+    end
+
+    it 'returns a protocol string given a blank string' do
+      expect(helper.url_with_protocol("")).to eq("http://")
+    end
+
+    it 'prepends the protocol to the given string' do
+      string = "givenString"
+      expect(helper.url_with_protocol(string)).to eq("http://" + string)
+    end
+  end
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151207133743) do
+ActiveRecord::Schema.define(version: 20151211093413) do
 
   create_table "bookmark_types", force: :cascade do |t|
     t.string   "description", null: false
@@ -49,6 +49,8 @@ ActiveRecord::Schema.define(version: 20151207133743) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.string   "token"
+    t.string   "auth_token"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
