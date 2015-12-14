@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
 
-  root "bookmarks#index"
+  root "site#home"
 
   resources :bookmarks, only: :index
 
