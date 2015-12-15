@@ -2,10 +2,10 @@ class Api::BookmarksController < BaseApiController
   skip_before_action :verify_authenticity_token, if: :json_request?
 
   def create
-    binding.pry
     user = verify_user(params[:userToken])
     bookmark = Bookmark.new(title: "#{params[:title]}",
-                            content: "#{params[:url]}",
+                            origin_title: "#{params[:origin_title]}",
+                            url_origin: "#{params[:url_origin]}",
                             image_url: "#{params[:favicon]}")
     if user.bookmarks << bookmark
       render json: bookmark, status: :created
