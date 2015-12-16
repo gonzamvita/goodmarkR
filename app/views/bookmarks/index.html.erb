@@ -1,65 +1,27 @@
-<div class="row">
-  <div class="row center-align">
-    <div class="col s4 m4">
-      <input class="with-gap" name="group1" type="radio" id="test1" />
-      <label for="test1">News</label>
+<div class="row center-align">
+  <div class="row" style="margin-top: 10px;">
+    <div class="col s12 m6 left">
+      <div class="button-group filters-button-group">
+        <button class="waves-effect waves-light btn is-checked" data-filter="*">*</button>
+        <button class="waves-effect waves-light btn" data-filter=".New">news</button>
+        <button class="waves-effect waves-light btn" data-filter=".Image">images</button>
+        <button class="waves-effect waves-light btn" data-filter=".General">general</button>
+      </div>
     </div>
-    <div class="col s4 m4">
-      <input class="with-gap" name="group1" type="radio" id="test2" />
-      <label for="test2">Images</label>
-    </div>
-    <div class="col s4 m4">
-      <input class="with-gap" name="group1" type="radio" id="test3"  />
-      <label for="test3">Whatever</label>
+    <div class="col s12 m6 right">
+      <div class="button-group sort-by-button-group">
+        <button class="waves-effect waves-light btn is-checked" data-sort-value="original-order" layout-mode="masonry">original order</button>
+        <button class="waves-effect waves-light btn" data-sort-value="name" layout-mode="fitRows">abc</button>
+      </div>
     </div>
   </div>
+</div>
+
+<div class="row">
+  <div class="grid">
     <% @bookmarks.each do |bookmark|%>
-      <div class="col s12 m4">
-        <% if !bookmark.bookmark_types_id.nil? %>
-          <div class="card indigo">
-            <div class="card-image">
-              <img class="responsive-img" src="<%= bookmark.image_url %>">
-              <span class="card-title"><%= bookmark.title %></span>
-            </div>
-            <div class="card-action">
-              <%= link_to "#{bookmark.content}", url_with_protocol(bookmark.url_origin), :target => '_blank' %>
-            </div>
-          </div>
-        <% else %>
-          <div class="card indigo">
-            <div class="card-content white-text">
-              <span class="card-title"><%= bookmark.title %></span>
-              <p><%= bookmark.origin_title %></p>
-              <div style="position: relative; height: 20px;">
-                <div class="fixed-action-btn horizontal click-to-toggle" style="position: absolute; right: 0px;top: 0px;">
-                  <a class="btn-floating btn-large deep-purple accent-1">
-                    <i class="large mdi-navigation-menu"></i>
-                  </a>
-                  <ul>
-                    <li>
-                      <a class="btn-floating indigo accent-1">
-                        <i class="material-icons">mode_edit</i>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="btn-floating indigo accent-1">
-                        <i class="material-icons">format_quote</i>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="btn-floating indigo accent-1">
-                        <i class="material-icons">delete</i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card-action">
-              <%= link_to "GO", url_with_protocol(bookmark.url_origin), :target => '_blank' %>
-            </div>
-          </div>
-        <% end %>
+      <div class="grid-item col s12 m6 l4 <%= bookmark.bookmark_type.description %>">
+        <%= render partial: "bookmark", object: bookmark %>
       </div>
     <% end %>
   </div>

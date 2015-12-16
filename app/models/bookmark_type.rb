@@ -1,3 +1,3 @@
 class BookmarkType < ActiveRecord::Base
-  belongs_to :bookmark
+  has_many :bookmarks
 end

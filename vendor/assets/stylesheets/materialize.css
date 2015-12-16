@@ -6068,7 +6068,7 @@ button.btn-floating {
       /*width 100% only goes to width of button container */ }
       .fixed-action-btn.horizontal ul li {
         display: inline-block;
-        margin: 15px 15px 0 0; }
+        margin: 0px 0px 0 0; }
   .fixed-action-btn ul {
     left: 0;
     right: 0;

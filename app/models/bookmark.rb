@@ -1,4 +1,8 @@
 class Bookmark < ActiveRecord::Base
   belongs_to :user
-  has_one :bookmark_type
+  belongs_to :bookmark_type
+
+  def description
+    self.bookmark_type.description
+  end
 end

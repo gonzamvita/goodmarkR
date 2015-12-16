@@ -6,7 +6,8 @@ class Api::BookmarksController < BaseApiController
     bookmark = Bookmark.new(title: "#{params[:title]}",
                             origin_title: "#{params[:origin_title]}",
                             url_origin: "#{params[:url_origin]}",
-                            image_url: "#{params[:favicon]}")
+                            image_url: "#{params[:favicon]}",
+                            bookmark_type_id: "#{params[:type]}")
     if user.bookmarks << bookmark
       render json: bookmark, status: :created
     else

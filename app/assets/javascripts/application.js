@@ -14,3 +14,4 @@
 //= require jquery_ujs
 //= require_tree .
 //= require materialize
+//= require isotope.pkgd.min

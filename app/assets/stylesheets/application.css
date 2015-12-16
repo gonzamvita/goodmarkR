@@ -30,5 +30,6 @@ body {
 }
 
 main {
+  background-color: #f5f5f5;
   flex: 1 0 auto;
 }

@@ -12,7 +12,6 @@ gem 'uglifier', '>= 1.3.0'
 # Use RSpec for Test Driven Development
 gem 'rspec-rails', '~> 3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-
 # Using devise for login
 gem 'devise'
 # Use has_secure_token for user model authetication

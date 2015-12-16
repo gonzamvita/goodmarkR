@@ -1,0 +1,25 @@
+<div class="card indigo">
+  <div class="card-content white-text">
+    <div class="orange-text">
+      <p class="center-align">
+        <%= bookmark.bookmark_type.description %>
+      </p>
+    </div>
+    <span class="card-title"><%= bookmark.title %></span>
+    <p><%= bookmark.origin_title %></p>
+  </div>
+  <div class="card-action">
+    <%= link_to "GO", url_with_protocol(bookmark.url_origin), :target => '_blank' %>
+    <div style="position: relative;">
+      <div class="fixed-action-btn horizontal click-to-toggle" style="position: absolute; right: -20px;bottom: -5px;">
+        <a class="btn-floating btn-small white">
+          <i class="large mdi-navigation-menu black-text"></i>
+        </a>
+        <ul>
+          <li><a class="btn-floating grey lighten-2"><i class="material-icons black-text">mode_edit</i></a></li>
+          <li><a class="btn-floating grey lighten-2"><i class="material-icons black-text">delete</i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
