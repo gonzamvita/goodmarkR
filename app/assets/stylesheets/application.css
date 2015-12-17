@@ -45,3 +45,7 @@ main {
 .dark-orange-text {
   color: #DD6B00 !important;
 }
+
+.material-icons.prefix {
+  line-height: 2 !important;
+}
