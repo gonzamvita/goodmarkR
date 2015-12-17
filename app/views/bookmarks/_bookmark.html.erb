@@ -1,6 +1,6 @@
-<div class="card indigo">
-  <div class="card-content white-text">
-    <div class="orange-text">
+<div class="card gray-card">
+  <div class="card-content clay-text">
+    <div class="dark-orange-text">
       <p class="center-align">
         <%= bookmark.bookmark_type.description %>
       </p>
@@ -9,7 +9,7 @@
     <p><%= bookmark.origin_title %></p>
   </div>
   <div class="card-action">
-    <%= link_to "GO", url_with_protocol(bookmark.url_origin), :target => '_blank' %>
+    <%= link_to "GO", url_with_protocol(bookmark.url_origin), :target => '_blank', :class => 'dark-orange-text' %>
     <div style="position: relative;">
       <div class="fixed-action-btn horizontal click-to-toggle" style="position: absolute; right: -20px;bottom: -5px;">
         <a class="btn-floating btn-small white">

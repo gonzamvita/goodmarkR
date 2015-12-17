@@ -33,3 +33,15 @@ main {
   background-color: #f5f5f5;
   flex: 1 0 auto;
 }
+
+.gray-card {
+  background-color: #bfbfbf !important;
+}
+
+.clay-text {
+  color: #43536C !important;
+}
+
+.dark-orange-text {
+  color: #DD6B00 !important;
+}
