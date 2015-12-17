@@ -1,0 +1,9 @@
+#card-option-buttons {
+  position: absolute;
+  right: -20px;
+  bottom: -5px;
+}
+
+#sort-filter-div {
+  margin-top: 10px;
+}

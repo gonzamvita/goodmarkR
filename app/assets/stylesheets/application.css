@@ -49,3 +49,8 @@ main {
 .material-icons.prefix {
   line-height: 2 !important;
 }
+
+.site-icon {
+  width: 14px;
+  margin-right: 5px;
+}
