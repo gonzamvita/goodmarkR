@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+BookmarkType.create(description: 'New')
+BookmarkType.create(description: 'Image')
+BookmarkType.create(description: 'General')
